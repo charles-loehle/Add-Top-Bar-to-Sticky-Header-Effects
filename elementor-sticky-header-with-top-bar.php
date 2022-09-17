@@ -14,3 +14,13 @@
  * Text Domain:       elementor-sticky-header-with-top-bar
  * Domain Path:       /languages
  */
+
+// If this file is called directly, abort.
+if ( ! defined( 'ABSPATH' ) ) die();
+
+function elementor_sticky_header_with_top_bar_scripts () {
+	wp_enqueue_script(plugin_dir_url( __FILE__ ) . 'assets/elementor-sticky-header-with-top-bar.js');
+	wp_enqueue_script(plugin_dir_url( __FILE__ ) . 'assets/elementor-sticky-header-with-top-bar.css');
+
+}
+add_action('wp_enqueue_scripts', '');

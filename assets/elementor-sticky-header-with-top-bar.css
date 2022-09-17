@@ -1,0 +1,20 @@
+.top-bar {
+	position: fixed;
+	width: 100%;
+	transition: all 0.3s ease !important;
+}
+
+.cl-web-header {
+	position: fixed;
+	width: 100%;
+	transition: all 0.3s ease !important;
+}
+
+.top-bar.slide-up {
+	transform: translateY(-100%);
+	transition: all 0.3s ease !important;
+}
+
+.cl-web-header.she-header {
+	transition: all 0.3s ease !important;
+}
