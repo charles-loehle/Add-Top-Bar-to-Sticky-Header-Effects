@@ -18,6 +18,7 @@
 /**
  * 1. give top bar id of #top-bar. Sticky header effects off 
  * 2. give main header id of #cl-web-header. Sticky header effects on with shrink header and shrink logo on. 
+ * 3. change number in js file, (window.scrollY >= 60), to match Sticky Header Effects scroll distance value 
  */
 
 // If this file is called directly, abort.
