@@ -1,5 +1,6 @@
-const topBar = document.querySelector('.top-bar');
-const bottomHeader = document.querySelector('.cl-web-header');
+const topBar = document.querySelector('#top-bar');
+const bottomHeader = document.querySelector('#cl-web-header');
+
 // on page load, bottomHeader is at bottom of topBar
 bottomHeader.style.transform = `translateY(${topBar.offsetHeight}px)`;
 

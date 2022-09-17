@@ -15,11 +15,16 @@
  * Domain Path:       /languages
  */
 
+/**
+ * 1. give top bar id of #top-bar. Sticky header effects off 
+ * 2. give main header id of #cl-web-header. Sticky header effects on with shrink header and shrink logo on. 
+ */
+
 // If this file is called directly, abort.
 if ( ! defined( 'ABSPATH' ) ) die();
 
-// function elementor_sticky_header_with_top_bar_scripts () {
-// 	wp_enqueue_script('custom-js', plugin_dir_url( __FILE__ ) . 'assets/elementor-sticky-header-with-top-bar.js');
-// 	wp_enqueue_style('custom-css', plugin_dir_url( __FILE__ ) . 'assets/elementor-sticky-header-with-top-bar.css');
-// }
-// add_action('wp_enqueue_scripts', 'elementor_sticky_header_with_top_bar_scripts');
+function elementor_sticky_header_with_top_bar_scripts () {
+	wp_enqueue_script('custom-js', plugin_dir_url( __FILE__ ) . 'assets/elementor-sticky-header-with-top-bar.js', [], time(), true);
+	wp_enqueue_style('custom-css', plugin_dir_url( __FILE__ ) . 'assets/elementor-sticky-header-with-top-bar.css');
+}
+add_action('wp_enqueue_scripts', 'elementor_sticky_header_with_top_bar_scripts');
